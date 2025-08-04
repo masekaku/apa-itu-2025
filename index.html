@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konten Khusus</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+
+    .kapsul-video {
+      max-width: 100%;
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .player-khusus {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+      pointer-events: none;
+    }
+
+    .logo-iklan {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      z-index: 2;
+    }
+
+    .link-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="kapsul-video">
+    <!-- Logo informasi/iklan -->
+
+    <!-- Link transparan agar video bisa diklik -->
+    <a href="https://otieu.com/4/9281006" target="_blank" class="link-overlay"></a>
+
+    <!-- Video autoplay loop -->
+    <video class="player-khusus" autoplay muted loop playsinline>
+      <source src="https://qu.ax/MKDjx.mp4" type="video/mp4" />
+      Browser kamu tidak mendukung elemen video.
+    </video>
+  </div>
+</body>
+</html>
